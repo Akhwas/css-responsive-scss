@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="logo"> Remember <span>
+                That
+            </span></a>
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="./images/exit.svg" alt="close navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li class="current"><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go premium</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="sub-head">it's Nitty &amp; gritty</p>
+                <h1>A task app that doesn't stink</h1>
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for Free </a>
+                    <a href="#" class="watch-video-cta" alt="video"><img src="images/watch.svg"/>watch a video</a>
+                </div>
+            </div>
+            <img src="images/illustration.svg" class="hero-img" alt="illustration"/>
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>unlimited tasks</li>
+                <li>SMS task reminder</li>
+                <li>coffetti explosions upon task completions</li>
+                <li>social media announcements</li>
+                <li>real time collaboration</li>
+                <li>other awesome features</li>
+            </ul>
+            <img src="./images/holding-phone.jpg" alt="man hold phone"/>
+        </div>
+    </section>
+    <section class="testemonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+                    <blockquote>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sed possimus non eveniet eligendi laboriosam iure, excepturi quia, dignissimos, accusantium nobis fugiat ex eos optio repellendus itaque mollitia in. Dolore!"</blockquote>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+                    <blockquote>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sed possimus non eveniet eligendi laboriosam iure, excepturi quia, dignissimos, accusantium nobis fugiat ex eos optio repellendus itaque mollitia in. Dolore!"</blockquote>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+                    <blockquote>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sed possimus non eveniet eligendi laboriosam iure, excepturi quia, dignissimos, accusantium nobis fugiat ex eos optio repellendus itaque mollitia in. Dolore!"</blockquote>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" class="send-message-cta" value="send message">
+                </form>
+                
+                    
+               
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.312736914308!2d29.959804613926142!3d31.239764781463276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c5a240716fbf%3A0xd2f5098c823a95dd!2sControl%20Jiu%20Jitsu%20Academy!5e0!3m2!1sen!2seg!4v1659955368651!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+ <script>
+    const mobileBtun = document.getElementById('mobile-cta')
+    nav = document.querySelector('nav')
+    mobileBtnExit = document.getElementById('mobile-exit');
+    mobileBtun.addEventListener('click',()=>{
+        nav.classList.add('menu-btn')
+    })
+    mobileBtnExit.addEventListener('click',()=>{
+        nav.classList.remove('menu-btn')
+    })
+ </script>   
+</body>
+</html>
